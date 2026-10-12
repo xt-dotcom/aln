@@ -12,6 +12,52 @@
 <style>
 :root{--ink:#15313d;--deep:#0c2b3a;--cream:#f8f6f1;--muted:#61737b;--line:#dbe2e0;--aqua:#bcd9d9;--gold:#d9c6a5}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}img{display:block;max-width:100%}.serif{font-family:'Cormorant Garamond',Georgia,serif}.smallcap{text-transform:uppercase;font-size:11px;letter-spacing:.24em;font-weight:700}.wrap{max-width:1160px;margin:auto;padding-inline:26px}.nav{position:absolute;z-index:10;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(26px,5vw,78px);color:white}.brand{display:flex;align-items:center;gap:13px;text-decoration:none}.brand img{width:64px;height:64px;object-fit:cover;border:1px solid #ffffff45}.brand span{font-size:11px;line-height:1.5;letter-spacing:.14em;font-weight:700;text-transform:uppercase}.navlink{font-size:12px;font-weight:600;letter-spacing:.1em;text-decoration:none;border:1px solid #ffffffa0;padding:13px 19px;transition:background .2s}.navlink:hover{background:#ffffff2b}.hero{min-height:min(860px,100svh);height:780px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#244557 url('https://commons.wikimedia.org/wiki/Special:FilePath/%C3%8Ele%20de%20la%20Comtesse%20%C3%A0%20Saint-Quay-Portrieux%20%E2%80%93%20C%C3%B4tes-d%E2%80%99Armor%2C%20Bretagne.jpg') center 54% / cover no-repeat}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#071e2d80 0%,#07233249 36%,#071e2bc9 100%)}.hero-inner{position:relative;padding:120px 24px 50px;max-width:880px}.hero .eyebrow{font-size:11px;letter-spacing:.29em;text-transform:uppercase;line-height:1.8;font-weight:700}.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(61px,9.5vw,121px);line-height:.94;letter-spacing:-.04em;margin:38px 0 22px}.hero h1 em{font-weight:400;color:#f4e6d5}.hero p{font-size:15px;line-height:1.9;max-width:570px;margin:0 auto 34px;color:#e8edee}.button{display:inline-block;text-decoration:none;background:#f5f1e9;color:var(--deep);padding:17px 30px;font-size:12px;font-weight:700;letter-spacing:.075em;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px);background:#fff}.hero-foot{position:absolute;bottom:27px;left:50%;transform:translateX(-50%);color:#e1e6e4;font-size:10px;white-space:nowrap;letter-spacing:.2em;text-transform:uppercase}.intro{padding:120px 0 114px;text-align:center}.intro .smallcap{color:#8a8980}.intro h2{font-weight:400;font-size:clamp(42px,5.4vw,72px);line-height:1.06;max-width:780px;margin:27px auto}.intro h2 em{color:#8b9da0;font-weight:400}.intro p{max-width:600px;margin:24px auto 0;line-height:2;color:#5e7079;font-size:15px}.rule{width:50px;height:1px;background:#a8b9b9;margin:0 auto}.story{display:grid;grid-template-columns:1.05fr .95fr;min-height:610px;background:#e8eeec}.story-photo{background:#abc4cf url('https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Quay-Portrieux%20ile%20de%20la%20Comtesse%2C%20island%2C%20France.JPG') center / cover no-repeat;min-height:570px}.story-text{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:80px clamp(40px,7vw,125px)}.story-text h2,.process h2,.contact h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.05;font-size:clamp(45px,5vw,68px);margin:25px 0}.story-text p{max-width:490px;line-height:2;color:#576b72;font-size:14px}.story-text .smallcap{color:#6a8e96}.quote{background:#143440;color:#f9f6f0;text-align:center;padding:105px 20px}.quote blockquote{margin:0 auto;max-width:900px;font:italic 400 clamp(35px,5vw,62px)/1.24 'Cormorant Garamond',Georgia,serif}.quote .smallcap{color:#b9cfcf;margin-top:30px}.process{padding:116px 0 110px;text-align:center}.process h2{margin:20px auto 15px}.process .lead{font-size:14px;line-height:1.9;color:#64757b;max-width:590px;margin:0 auto}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:38px;text-align:left;margin-top:76px}.step{padding-top:21px;border-top:1px solid #c3d0d0}.step .number{font:italic 38px 'Cormorant Garamond',Georgia,serif;color:#8ca8a9}.step h3{font:500 30px 'Cormorant Garamond',Georgia,serif;margin:15px 0 12px}.step p{color:#64757b;font-size:13px;line-height:1.9;margin:0}.landscape{height:410px;position:relative;background:#53727e url('https://commons.wikimedia.org/wiki/Special:FilePath/Baie%20de%20Saint.jpg') center / cover no-repeat}.landscape:after{content:"La mer pour horizon, le souvenir pour toujours.";position:absolute;left:8%;bottom:38px;color:white;font:italic 400 clamp(28px,4vw,48px) 'Cormorant Garamond',Georgia,serif;text-shadow:0 2px 16px #0009}.contact{padding:115px 0 100px;text-align:center;background:#e9efed}.contact h2{max-width:710px;margin:24px auto}.contact p{line-height:1.95;color:#60747a;font-size:14px;max-width:620px;margin:0 auto 32px}.contact .button{background:#173d4b;color:white}.contact .button:hover{background:#23586a}.contact .note{font-size:12px;margin-top:28px;max-width:650px}.footer{background:#102d3a;color:#d9e3e3;padding:37px 0}.footin{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer strong{font-size:11px;letter-spacing:.1em}.footer span{font-size:11px;opacity:.7}.footer a{font-size:11px;color:#d9e3e3}.revealed{animation:up .9s ease both}@keyframes up{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){.nav{padding:15px 20px}.brand img{width:48px;height:48px}.brand span{font-size:9px}.navlink{padding:11px 12px;font-size:10px}.hero{min-height:680px;height:100svh;max-height:810px}.hero h1{margin-top:27px}.intro{padding:82px 0}.story{grid-template-columns:1fr}.story-photo{min-height:340px}.story-text{padding:65px 30px}.quote{padding:80px 24px}.process{padding:85px 0}.steps{grid-template-columns:1fr;gap:30px;margin-top:55px}.step h3{margin-top:5px}.landscape{height:320px}.contact{padding:85px 0}.footin{align-items:flex-start;flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.revealed{animation:none}}
 .photo-credits{padding:13px 0 18px;background:#102d3a;color:#bdd0d1;font-size:10px;line-height:1.8}.photo-credits a{color:#dfebec;text-underline-offset:2px}@media(max-width:760px){.photo-credits{padding-bottom:25px}}
+
+/* V4 : lisibilité et respiration sur smartphone */
+@media (max-width: 760px) {
+  .wrap { padding-inline: 30px; }
+  .nav { padding: 18px 22px; gap: 12px; }
+  .brand { gap: 9px; min-width: 0; }
+  .brand img { width: 43px; height: 43px; flex: 0 0 auto; }
+  .brand span { font-size: 8.5px; letter-spacing: .075em; }
+  .navlink { padding: 12px 11px; font-size: 9px; letter-spacing: .035em; white-space: nowrap; }
+  .hero { height: auto; min-height: 760px; max-height: none; padding-block: 125px 90px; background-position: center center; }
+  .hero:before { background: linear-gradient(180deg,rgba(7,25,37,.63),rgba(7,25,37,.68) 45%,rgba(7,25,37,.75)); }
+  .hero-inner { padding: 15px 30px 25px; max-width: 480px; }
+  .hero .eyebrow { font-size: 10px; letter-spacing: .14em; line-height: 1.7; }
+  .hero h1 { font-size: clamp(43px, 10.5vw, 58px); line-height: 1.04; letter-spacing: -.028em; margin: 28px auto 26px; text-shadow: 0 2px 16px rgba(0,0,0,.28); }
+  .hero p { font-size: 14px; line-height: 1.78; max-width: 330px; color: #fff; margin-bottom: 28px; }
+  .hero p br { display: none; }
+  .hero .button { padding: 16px 18px; font-size: 10.5px; letter-spacing: .04em; }
+  .hero-foot { width: calc(100% - 45px); white-space: normal; line-height: 1.8; font-size: 9px; letter-spacing: .12em; }
+  .intro { padding-block: 75px 80px; }
+  .intro h2 { font-size: clamp(40px, 9vw, 52px); }
+  .intro p, .story-text p, .process .lead, .contact p { font-size: 15px; line-height: 1.85; }
+  .story-photo { min-height: 310px; }
+  .story-text { padding: 65px 30px 70px; }
+  .story-text h2, .process h2, .contact h2 { font-size: clamp(41px, 9vw, 54px); line-height: 1.07; }
+  .quote { padding: 75px 30px; }
+  .quote blockquote { font-size: clamp(33px, 8vw, 46px); }
+  .process { padding-block: 76px 84px; }
+  .process .lead { max-width: 420px; }
+  .steps { margin-top: 48px; gap: 0; }
+  .step { padding: 27px 0 31px; }
+  .step h3 { font-size: clamp(27px, 6.8vw, 34px); line-height: 1.15; margin: 7px 0 12px; }
+  .step p { font-size: 14.5px; line-height: 1.85; }
+  .step .number { font-size: 35px; }
+  .landscape { height: 300px; }
+  .landscape:after { left: 30px; right: 30px; bottom: 28px; font-size: 34px; }
+  .contact { padding-block: 80px; }
+  .contact .button { font-size: 10px; padding: 17px 15px; max-width: 100%; }
+  .footer .wrap { padding-inline: 30px; }
+}
+@media (max-width: 360px) {
+  .hero h1 { font-size: 40px; }
+  .hero-inner { padding-inline: 24px; }
+  .wrap { padding-inline: 26px; }
+  .nav { padding-inline: 15px; }
+  .navlink { font-size: 8.5px; }
+}
 </style>
 </head>
 <body>
