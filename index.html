@@ -58,6 +58,57 @@
   .nav { padding-inline: 15px; }
   .navlink { font-size: 8.5px; }
 }
+
+/* V6 — finition éditoriale et cadrages mobiles */
+:root { color-scheme: light; }
+body { overflow-x: hidden; }
+.nav { text-shadow: 0 1px 10px #071b29a0; }
+.navlink, .button { border-radius: 2px; }
+.hero { isolation:isolate; background-position:center 48%; }
+.hero:before { background: linear-gradient(180deg,rgba(10,28,40,.45) 0%,rgba(9,27,40,.49) 34%,rgba(8,26,39,.70) 74%,rgba(8,26,39,.78) 100%); z-index:0; }
+.hero-inner { z-index:1; }
+.hero h1 { text-wrap: balance; text-shadow:0 3px 28px rgba(0,0,0,.30); }
+.hero .eyebrow, .hero-foot { text-shadow: 0 1px 12px rgba(0,0,0,.45); }
+.hero-foot { z-index:1; }
+.intro h2, .story-text h2, .process h2, .contact h2 { text-wrap:balance; }
+.story-photo { background-position: center 51%; }
+.landscape { background-size: cover; background-position:center 47%; }
+.landscape:before { content:''; position:absolute; inset:0; background:linear-gradient(0deg,rgba(7,27,37,.52),transparent 65%); }
+.landscape:after { max-width: 850px; line-height:1.15; }
+.step h3 { line-height:1.14; }
+.button:focus-visible, .navlink:focus-visible, .brand:focus-visible { outline:3px solid #f2d6a5; outline-offset:4px; }
+@media(max-width:760px) {
+  .nav { padding:17px 20px; }
+  .brand img { width:46px; height:46px; }
+  .brand span { font-size:9px; line-height:1.45; }
+  .hero { height:auto; min-height: min(810px, 100svh); max-height:none; padding-block:134px 115px; background-position:51% center; }
+  .hero:before { background: linear-gradient(180deg,rgba(5,24,37,.61),rgba(5,24,37,.65) 45%,rgba(5,24,37,.79)); }
+  .hero-inner { padding:0 26px; width:100%; max-width:490px; }
+  .hero .eyebrow { font-size:10px; line-height:1.7; letter-spacing:.12em; max-width:320px; margin-inline:auto; }
+  .hero h1 { font-size:clamp(42px,9.5vw,55px); line-height:1.02; margin:35px 0 25px; letter-spacing:-.025em; }
+  .hero p { font-size:15px; line-height:1.75; max-width:335px; }
+  .hero .button { font-size:11px; line-height:1.5; max-width:100%; padding:16px 18px; }
+  .hero-foot { bottom:23px; width:calc(100% - 60px); font-size:9px; letter-spacing:.10em; }
+  .wrap { padding-inline:30px; }
+  .intro { padding-block:77px 84px; }
+  .intro h2 { font-size:clamp(38px,8.5vw,52px); }
+  .story-photo { min-height:350px; background-position: center 60%; }
+  .story-text { padding:64px 32px 74px; }
+  .story-text h2, .process h2, .contact h2 { font-size:clamp(40px,9vw,52px); }
+  .quote blockquote { font-size:clamp(31px,7.4vw,45px); }
+  .step { padding:28px 0 36px; }
+  .step h3 { font-size:clamp(28px,6.7vw,34px); }
+  .step p { font-size:15px; }
+  .landscape { height:255px; background-position: 35% center; }
+  .landscape:after { font-size:clamp(28px,7vw,36px); left:30px; right:30px; bottom:25px; }
+  .contact .button { line-height:1.65; }
+}
+@media(max-width:390px) {
+  .hero { min-height:760px; padding-top:135px; }
+  .hero h1 { font-size:clamp(39px,10.1vw,43px); }
+  .navlink { font-size:9px; padding:10px; }
+  .brand span { font-size:8px; }
+}
 </style>
 </head>
 <body>
